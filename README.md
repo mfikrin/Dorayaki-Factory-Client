@@ -1,3 +1,3 @@
 # Dorayaki-Factory-Client
 
-NodeJS
+React + NodeJS
