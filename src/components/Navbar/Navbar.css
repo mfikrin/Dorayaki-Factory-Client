@@ -55,14 +55,13 @@
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  height: 120%;
+  height: 110%;
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 5px solid #fff;
   transition: all 0.2s ease-out;
 }
-
 
 .nav-links-mobile {
   display: none;
@@ -72,7 +71,7 @@
   display: none;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1050px) {
   .NavbarItems {
     position: relative;
   }
@@ -83,7 +82,7 @@
     width: 100%;
     height: 440px;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
