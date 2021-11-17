@@ -1,0 +1,37 @@
+@media all and (min-width: 320px) {
+    .Login {
+      padding: 200px 0;
+      
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    .Login Button{
+        width: 320px;
+        margin-top: 15px;
+        background: #667db6;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .Login #title{
+        padding-bottom: 15px;
+    }
+
+    .Body{
+        background: #FFEFBA; 
+        background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  
+        background: linear-gradient(to right, #FFFFFF, #FFEFBA); 
+        
+        /* padding: 175px 0; */
+        overflow-y: hidden;
+        height: 100%;
+    }
+    html, body, #root{
+        height: 100%;
+      }
+  }
+  
