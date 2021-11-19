@@ -1,0 +1,24 @@
+.container__report{
+    position:relative;
+    min-height: 100vh;
+    display: block;
+    overflow: hidden;
+    padding-bottom:100px;
+}
+
+
+.histitle{
+    padding-top: 1%;
+    width:auto;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight:bolder;
+}
+
+.histitle a{
+    text-decoration: none;
+    color:#009dff;
+}

@@ -79,16 +79,17 @@ function Recipe() {
 
     const handleSubmit = event => {
         event.preventDefault();
+        alert('HMM');
         console.log("INPUT")
-        console.log(InputListRecipe);
-        console.log(RecipeName);
+        console.log(JSON.stringify(InputListRecipe));
+        console.log(RecipeName.RecipeName);
 
     }
 
     return (
 
         <div class="container__recipe">
-            <form onSubmit={handleSubmit}/>
+            <form onSubmit={handleSubmit}>
                 <div className="adderform">
                     <h2>Add Dorayaki Recipe</h2>
                     <label>Name</label>
@@ -110,7 +111,7 @@ function Recipe() {
                     }
                     <br/>
                     <label>Image</label>
-                    <input className="imginput" type="file" name="addimage" required/>
+                    {/* <input className="imginput" type="file" name="addimage" required/> */}
                     
                     <button className="butmit" name="AddVar" type="submit">Submit</button>
                     
@@ -121,6 +122,7 @@ function Recipe() {
                 <br/>
                 {JSON.stringify(RecipeName,null,2)}
             </pre>
+        </form>
     
     </div>
 
