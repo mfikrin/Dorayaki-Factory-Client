@@ -5,6 +5,16 @@ table{
     margin-right: auto;
 }
 
+.search__textinput{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
 .search__report{
     text-align: center;
     justify-content: center;
@@ -59,7 +69,7 @@ th {
     transition: background-color .5s;
 }
 
-.pagination .btn__pagination:hover {
+.btn__pagination:hover {
     background-color: rgb(31, 76, 145);
     color: white;
 

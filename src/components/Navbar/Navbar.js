@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import { Link } from "react-router-dom";
 import { Button } from '../Button';
 import './Navbar.css';
+import Auth from '../../Auth'
 
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
   const closeMobileMenu = () => setclick(false);
   
   const showButton = () => {
-    if (window.innerWidth <= 1050){
+    if (window.innerWidth <= 950){
       setButton(false);
     }else{
       setButton(true);
@@ -22,6 +23,8 @@ function Navbar() {
   useEffect( () => {
     showButton()
   },[]);
+
+
 
   window.addEventListener('resize',showButton);
   
@@ -48,7 +51,7 @@ function Navbar() {
 
                 <li className="nav-item">
                   <Link to ="/recipe" className="nav-links" onClick={closeMobileMenu}>
-                    Recipe
+                    Add Recipe
                   </Link>
                 </li>
 
@@ -66,7 +69,7 @@ function Navbar() {
                 
             </ul>
 
-            {button && <Button buttonStyle='btn-outline'> Log out</Button>}
+            {button && <Button onClick={Auth.logout()} linkto = "/login" customstyle="flip"> Log out</Button>}
 
 
 

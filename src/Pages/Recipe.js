@@ -1,39 +1,6 @@
 import React, {useState} from 'react'
+import { Button } from '../components/Button';
 import './Recipe.css'
-
-// class Recipe extends React.Component {
-//     constructor(props) {
-//       super(props);
-//       this.state = {
-//         value: 'Please write an essay about your favorite DOM element.'
-//       };
-  
-//       this.handleChange = this.handleChange.bind(this);
-//       this.handleSubmit = this.handleSubmit.bind(this);
-//     }
-  
-//     handleChange(event) {
-//       this.setState({value: event.target.value});
-//     }
-  
-//     handleSubmit(event) {
-//       alert('An essay was submitted: ' + this.state.value);
-//       event.preventDefault();
-//     }
-  
-//     render() {
-//       return (
-//         <form onSubmit={this.handleSubmit}>
-//           <label>
-//             Essay:
-//             <textarea value={this.state.value} onChange={this.handleChange} />
-//           </label>
-//           <input type="submit" value="Submit" />
-//         </form>
-//       );
-//     }
-//   }
-
 
 function Recipe() {
 
@@ -42,7 +9,8 @@ function Recipe() {
     const [InputListRecipe, setInputListRecipe] = useState(
         
         [
-            {recipe: ""}
+            {recipe: "",
+            quantity: 1}
         ]
     );
 
@@ -67,7 +35,7 @@ function Recipe() {
     const handleAddInput = () => {
         // setInputListRecipe([...InputListRecipe,{recipe : ""}]);
         const list = [...InputListRecipe];
-        list.push({recipe:""});
+        list.push({recipe:"",quantity:1});
         setInputListRecipe(list);
     }
 
@@ -93,27 +61,37 @@ function Recipe() {
                 <div className="adderform">
                     <h2>Add Dorayaki Recipe</h2>
                     <label>Name</label>
-                    <input name = "RecipeName" className="textinput" type="text" placeholder="Nama resep ... " onChange={handleChangeName}/>
+                    
+                    <input name = "RecipeName" className="nameinput" type="text" placeholder="Nama resep ... " onChange={handleChangeName} autoComplete="off"/>
                     {InputListRecipe.map((item,index) =>{
                         return(
                             <div key ={index} className="bahan">
                                 <label>Bahan {index + 1}</label>
-                                <input name = "recipe" className="textinput" type="text" placeholder="Bahan makanan ... " value={item.recipe} onChange = {e => handleChange(e,index)}/>
+                                <br/>
+                                <input name = "recipe" className="textinput" type="text" placeholder="Bahan makanan ... " value={item.recipe} onChange = {e => handleChange(e,index)} autoComplete="off"/>
+                                
+                                
+                                
+                                <input name = "quantity" className="rcpinput" type="number" placeholder="Bahan makanan ... " min="1" value={item.quantity} onChange = {e => handleChange(e,index)} autoComplete="off"/>
                                 {
-                                    InputListRecipe.length - 1 === index && <input type="button" value="Add" className="button__recipe" onClick={handleAddInput}/>}
-                                {
-                                    InputListRecipe.length !== 1 && <input type="button" value="Remove" className="button__recipe" onClick={() => handleRemoveInput(index)}/>
+                                    InputListRecipe.length - 1 === index && <input type="button" value="+" className="btn__add mrglft" onClick={handleAddInput}/>
                                 }
+                                {
+                                    InputListRecipe.length !== 1 && <input type="button" value="-" className="btn__add danger mrglft" onClick={() => handleRemoveInput(index)}/>
+                                }
+                                
+                                
                             </div>
                         )
                         }
                     )  
                     }
                     <br/>
-                    <label>Image</label>
+                    {/* <label>Image</label> */}
                     {/* <input className="imginput" type="file" name="addimage" required/> */}
                     
-                    <button className="butmit" name="AddVar" type="submit">Submit</button>
+                    <button className="btn__add wider" name="AddVar" type="submit">Submit</button>
+                    
                     
                 </div>
 

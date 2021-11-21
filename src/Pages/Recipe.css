@@ -1,16 +1,3 @@
-/* *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    background-color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    position: relative;
-} */
-
 .container__recipe{
     position:relative;
     min-height: 100vh;
@@ -19,59 +6,56 @@ body{
     padding-bottom:100px;
 }
 
-.textinput{
+.nameinput{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-.button__recipe{
-    height: 25px;
-    width: 80px;
-    margin-right: 10px;
-}
-
-.imginput{
-    width: 100%;
-    /* padding: 12px 20px; */
+.textinput{
+    width: 50%;
+    padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
+    border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.butmit{
-    background-color: #072f5f;
-    color:white;
-    height:40px;
-    width: 405px;
-    border: none;
 }
 
-.butmit:hover{
-    background-color:#009dff;
+.rcpinput{
+    width: 21%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
+
+.btn__add{
+    color: white;
+    background-color: rgb(31, 76, 145);
+    border: none;
+    padding: 8px 16px;
+    margin: 12px 8px;
+    text-decoration: none;
+    transition: background-color .5s;
+  }
+  
+  .danger{
+    background-color:rgb(170, 48, 43) ;
+  }
+
+  .wider{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
 
 .adderform{
     padding-top: 2.5%;
     width:400px ;
     margin: 0 auto;
 }
-.inFlex{
-    display: inline-flex;
-}
 
-#canBut{
-    width : 200px;
-    background-color:#C4161C;  
-}
-#canBut:hover{
-    background-color: red;
-}
-#edVar{
-    width : 205px;
-}

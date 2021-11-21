@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import { Button } from '../components/Button';
 import Table , {SelectColumnFilter} from '../components/Table'
 import "./Report.css"
 
@@ -210,10 +211,10 @@ function Report() {
             accessor: "reqdate",
           },
           {
-            Header: "Action",
+            Header: "Change Status",
             accessor: "action",
             // Cell: ({value}) => (<button onClick={this.editRow({value})}>Edit</button>)value = {cell.row.values.status} 
-            Cell: ({cell}) => (<button className="btn__pagination" onClick={()=> alert(cell.row.values.status)}>Button</button>)
+            Cell: ({cell}) => (<Button onClick={()=> alert(cell.row.values.status)}>Change</Button>)
             // Cell: ({cell}) => (<button onClick={handleClick}>Button</button>)
           }
         ],

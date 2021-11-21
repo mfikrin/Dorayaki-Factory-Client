@@ -15,14 +15,15 @@ function GlobalFilter({
 
     return (
     <span>
-        Search:{' '}
+        Search :{' '}
         <input
         value={value || ""}
         onChange={e => {
             setValue(e.target.value);
             onChange(e.target.value);
         }}
-        placeholder={`${count} keyword`}
+        placeholder= "input keyword ..."
+        className="search__textinput"
         />
     </span>
     )
@@ -140,20 +141,3 @@ function Table({columns, data}) {
 }
 
 export default Table
-
-
-
-
-
-// {Header: 'Transaction Date',accessor: 'transationDate', style: {textAlign: "center"},
-//                           sortMethod: (a, b) => {
-//                             var a1 = new Date(a).getTime();
-//                             var b1 = new Date(b).getTime();
-//                           if(a1<b1)
-//                           return 1;
-//                           else if(a1<b1)
-//                           return -1;
-//                           else
-//                           return 0;
-//                           }
-//                         },
