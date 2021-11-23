@@ -8,6 +8,8 @@ import Cards from './components/Cards';
 import Login from './Pages/Login';
 import Detail from './Pages/Detail';
 import Auth from './Auth';
+import Test from './components/Test'
+import Util from './util/Util'
 import { Fragment } from 'react';
 
 
@@ -20,11 +22,14 @@ function App() {
         <Route path='/login' exact component={Login} />
         <Fragment>
         <Navbar /> 
+        
        
           <Route path='/' exact component={Home} />
           <Route path='/recipe' component={Recipe} />
           <Route path='/report' component={Report} />
-          <Route path={'/detail'} component={Detail} />
+          <Route path='/detail/:id' component={Detail} />
+          <Route path='/util' component={Util} />
+
         </Fragment>
           
           </Switch>

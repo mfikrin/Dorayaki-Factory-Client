@@ -12,7 +12,7 @@ export const Button = ( {
     style
 }) =>{
 
-    if (customstyle == "flip"){
+    if (customstyle === "flip"){
         style = " flip"
     }else{
         style = ""

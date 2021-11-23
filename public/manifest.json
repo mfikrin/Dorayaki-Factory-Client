@@ -1,14 +1,14 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Stand With Dorayaki",
+  "name": "Stand With Our Dorayaki",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/img/dorayaki.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "img/rendang.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },

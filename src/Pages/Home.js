@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from '../components/Cards'
+import Test from '../components/Test'
 import Auth from '../Auth';
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
     <>
         
             <Cards/>
+            {/* <Test/> */}
             
     </>
     )

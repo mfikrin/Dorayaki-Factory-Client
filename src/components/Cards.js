@@ -5,124 +5,36 @@ import data from '../data/card.json'
 // import img from '../img/dorayaki.png'
 
 function Cards() {
-    
-    // get_data = data.map ( (data) => {
+
+    const json_data = data['cards']
+
     return (
             <>
+            {/* {console.log(data)} */}
+
             <div className="container">
-                
-                {/* <div className="box">
-                    <CardItem
-                        id = {data.id}
-                        src = {data.src}
-                        alt = {data.alt}
-                        title = {data.title}
-                        text1 = {data.text1}
-                        text2 = {data.text2}
-    
-                        textbutton = {data.textbutton}
-                    />
-                </div> */}
-    
-                <div className="box">
-                    <CardItem
-                        id = "2"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        text2 = "ini adalah resep dorayaki"
-    
-                        textbutton = "detail"
-                    />
-                </div>
-    
-                <div className="box">
-                    <CardItem
-                        id = "3"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        text2 = "ini adalah resep dorayaki"
-    
-                        textbutton = "detail"
-                    />
-                </div>
-    
-                <div className="box">
-                    <CardItem
-                        id = "4"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        text2 = "ini adalah resep dorayaki"
-    
-                        textbutton = "detail"
-                    />
-                </div>
-    
-                <div className="box">
-                    <CardItem
-                        id = "5"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        text2 = "ini adalah resep dorayaki"
-    
-                        textbutton = "detail"
-                    />
-                </div>
-    
-                <div className="box">
-                    <CardItem
-                        id = "6"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        text2 = "ini adalah resep dorayaki"
-    
-                        textbutton = "detail"
-                    />
-                </div>
-    
-                <div className="box">
-                    <CardItem
-                        id = "7"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        text2 = "ini adalah resep dorayaki"
-    
-                        textbutton = "detail"
-                    />
-                </div>
-    
-                <div className="box">
-                    <CardItem
-                        id = "8"
-                        src = "img/dorayaki.png"
-                        alt = "dorayaki"
-                        title = "resep dorayaki"
-                        text1 = "ini adalah resep dorayaki"
-                        textbutton = "detail"
-                    />
-                </div>
-    
-    
+                {json_data.map(i => {
+                    return(
+                        <div className="box" key={i.id}>
+                            <CardItem
+                            id = {i.id}
+                            src = {i.src}
+                            alt = {i.alt}
+                            title = {i.title}
+                            text1 = {i.text1}
+                            text2 = {i.text2}
+        
+                            textbutton = {i.textbutton}
+                            />
+                        </div>
+                    )
+                    })
+                }
                 
             </div>
             </>
-            
-              
-    
         )
+        
+    }
     
-    
-}
-
 export default Cards
