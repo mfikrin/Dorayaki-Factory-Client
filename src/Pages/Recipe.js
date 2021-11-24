@@ -45,10 +45,10 @@ function Recipe() {
         setInputListRecipe(list);
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        alert('HMM');
-        console.log("INPUT")
+        alert('Submit');
+        console.log("Submit")
         console.log(JSON.stringify(InputListRecipe));
         console.log(RecipeName.RecipeName);
 
@@ -59,7 +59,7 @@ function Recipe() {
         <div class="container__recipe">
             <form onSubmit={handleSubmit}>
                 <div className="adderform">
-                    <h2>Add Dorayaki Recipe</h2>
+                    <h2 className="recipe__title">Add Dorayaki Recipe</h2>
                     <label>Name</label>
                     
                     <input name = "RecipeName" className="nameinput" type="text" placeholder="Nama resep ... " onChange={handleChangeName} autoComplete="off"/>
@@ -91,7 +91,6 @@ function Recipe() {
                     {/* <input className="imginput" type="file" name="addimage" required/> */}
                     
                     <button className="btn__add wider" name="AddVar" type="submit">Submit</button>
-                    
                     
                 </div>
 

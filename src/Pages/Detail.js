@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../data/card.json'
 import {useParams} from 'react-router-dom';
+import "./Detail.css"
 function Detail() {
 
 
@@ -32,7 +33,7 @@ function Detail() {
               <div className="text">
                   <h3>{data_detail.title}</h3>
               </div>
-          </div>
+            </div>
 
           </>
       )

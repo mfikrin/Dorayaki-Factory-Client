@@ -1,0 +1,221 @@
+{
+    "Bahan" : [
+        {
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "Bahan dorayaki1",
+            "quantity" : 1
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "Bahan dorayak2",
+            "quantity" : 5
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "Bahan dorayaki3",
+            "quantity" : 5
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "Bahan dorayaki4",
+            "quantity" : 5
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "Bahan dorayaki5",
+            "quantity" : 5
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "Bahan dorayaki6",
+            "quantity" : 5
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "Bahan dorayaki7",
+            "quantity" : 5
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "Bahan dorayaki8",
+            "quantity" : 5
+        },{
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "Bahan dorayaki1",
+            "quantity" : 5
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "Bahan dorayak2",
+            "quantity" : 5
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "Bahan dorayaki3",
+            "quantity" : 5
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "Bahan dorayaki4",
+            "quantity" : 5
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "Bahan dorayaki5",
+            "quantity" : 5
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "Bahan dorayaki6",
+            "quantity" : 5
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "Bahan dorayaki7",
+            "quantity" : 5
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "Bahan dorayaki8",
+            "quantity" : 5
+        },{
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "Bahan dorayaki1",
+            "text1" : "ini adalah Bahan dorayaki1",
+            "text2" : "ini adalah Bahan dorayaki1",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "Bahan dorayak2",
+            "quantity" : 5
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "Bahan dorayaki3",
+            "quantity" : 5
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "Bahan dorayaki4",
+            "quantity" : 5
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "Bahan dorayaki5",
+            "quantity" : 5
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "Bahan dorayaki6",
+            "quantity" : 5
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "Bahan dorayaki7",
+            "quantity" : 5
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "Bahan dorayaki8",
+            "quantity" : 5
+        },{
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "Bahan dorayaki1",
+            "text1" : "ini adalah Bahan dorayaki1",
+            "text2" : "ini adalah Bahan dorayaki1",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "Bahan dorayak2",
+            "quantity" : 5
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "Bahan dorayaki3",
+            "quantity" : 5
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "Bahan dorayaki4",
+            "quantity" : 5
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "Bahan dorayaki5",
+            "quantity" : 5
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "Bahan dorayaki6",
+            "quantity" : 5
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "Bahan dorayaki7",
+            "quantity" : 5
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "Bahan dorayaki8",
+            "quantity" : 5
+        }
+    ]
+}

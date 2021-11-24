@@ -6,6 +6,18 @@
     padding-bottom:100px;
 }
 
+.recipe__title{
+  padding-top: 1%;
+  width:auto;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 32px;
+  font-weight:bolder;
+}
+
 .nameinput{
     width: 100%;
     padding: 12px 20px;
@@ -54,7 +66,7 @@
   }
 
 .adderform{
-    padding-top: 2.5%;
+    padding-top: 1%;
     width:400px ;
     margin: 0 auto;
 }

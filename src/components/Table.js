@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTable , useGlobalFilter, useAsyncDebounce , useFilters , useSortBy , usePagination} from "react-table";
 import "./Table.css"
+import Pagination from './Pagination';
 
 function GlobalFilter({
     globalFilter,
@@ -76,7 +77,7 @@ function Table({columns, data}) {
                 ))}
               </tr>
             ))}
-          </thead>
+          </thead>  
           <tbody {...getTableBodyProps()}>
             {page.map((row, i) => {
               prepareRow(row);

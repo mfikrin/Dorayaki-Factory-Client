@@ -1,13 +1,14 @@
 import React from 'react'
-import './Cards.css'
+import './Bahan.css'
 import CardItem from './CardItem'
-import data from '../data/card.json'
+import data from '../data/Bahan.json'
 import Pagination from './Pagination'
+import BahanItem from './BahanItem'
 // import img from '../img/dorayaki.png'
 
-function Cards() {
+function Bahan() {
 
-    const json_data = data['cards']
+    const json_data = data['Bahan']
     const {
         firstContentIndex,
         lastContentIndex,
@@ -30,15 +31,12 @@ function Cards() {
                 {json_data.slice(firstContentIndex,lastContentIndex).map(i => {
                     return(
                         <div className="box" key={i.id}>
-                            <CardItem
+                            <BahanItem
                             id = {i.id}
                             src = {i.src}
                             alt = {i.alt}
                             title = {i.title}
-                            text1 = {i.text1}
-                            text2 = {i.text2}
-        
-                            textbutton = {i.textbutton}
+                            quantity = {i.quantity}
                             />
                         </div>
                     )
@@ -84,4 +82,4 @@ function Cards() {
         
     }
     
-export default Cards
+export default Bahan

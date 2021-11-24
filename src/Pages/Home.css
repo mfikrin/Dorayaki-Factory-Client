@@ -1,0 +1,17 @@
+
+.home__title{
+    padding-top: 1%;
+    width:auto;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 32px;
+    font-weight:bolder;
+}
+
+hr.custom__hr{
+    border: 10px solid rgb(37, 182, 92);
+    /* border-radius: 5px; */
+}

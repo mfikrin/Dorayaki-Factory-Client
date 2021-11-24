@@ -2,7 +2,7 @@
     "cards" : [
         {
             "id" : "1",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki1",
             "title" : "resep dorayaki1",
             "text1" : "ini adalah resep dorayaki1",
@@ -11,7 +11,7 @@
         },
         {
             "id" : "2",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki2",
             "title" : "resep dorayak2",
             "text1" : "ini adalah resep dorayaki2",
@@ -20,7 +20,7 @@
         },
         {
             "id" : "3",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki3",
             "title" : "resep dorayaki3",
             "text1" : "ini adalah resep dorayaki3",
@@ -29,7 +29,7 @@
         },
         {
             "id" : "4",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki4",
             "title" : "resep dorayaki4",
             "text1" : "ini adalah resep dorayaki4",
@@ -37,7 +37,7 @@
             "textbutton" : "detail"
         },{
             "id" : "5",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki5",
             "title" : "resep dorayaki5",
             "text1" : "ini adalah resep dorayaki5",
@@ -46,7 +46,7 @@
         },
         {
             "id" : "6",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki6",
             "title" : "resep dorayaki6",
             "text1" : "ini adalah resep dorayaki6",
@@ -54,7 +54,7 @@
             "textbutton" : "detail"
         },{
             "id" : "7",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki7",
             "title" : "resep dorayaki7",
             "text1" : "ini adalah resep dorayaki7",
@@ -63,7 +63,214 @@
         },
         {
             "id" : "8",
-            "src" : "img/dorayaki.png",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "resep dorayaki8",
+            "text1" : "ini adalah resep dorayaki8",
+            "text2" : "ini adalah resep dorayaki8",
+            "textbutton" : "detail"
+        },{
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "resep dorayaki1",
+            "text1" : "ini adalah resep dorayaki1",
+            "text2" : "ini adalah resep dorayaki1",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "resep dorayak2",
+            "text1" : "ini adalah resep dorayaki2",
+            "text2" : "ini adalah resep dorayaki2",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "resep dorayaki3",
+            "text1" : "ini adalah resep dorayaki3",
+            "text2" : "ini adalah resep dorayaki3",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "resep dorayaki4",
+            "text1" : "ini adalah resep dorayaki4",
+            "text2" : "ini adalah resep dorayaki4",
+            "textbutton" : "detail"
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "resep dorayaki5",
+            "text1" : "ini adalah resep dorayaki5",
+            "text2" : "ini adalah resep dorayaki5",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "resep dorayaki6",
+            "text1" : "ini adalah resep dorayaki6",
+            "text2" : "ini adalah resep dorayaki6",
+            "textbutton" : "detail"
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "resep dorayaki7",
+            "text1" : "ini adalah resep dorayaki7",
+            "text2" : "ini adalah resep dorayaki7",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "resep dorayaki8",
+            "text1" : "ini adalah resep dorayaki8",
+            "text2" : "ini adalah resep dorayaki8",
+            "textbutton" : "detail"
+        },{
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "resep dorayaki1",
+            "text1" : "ini adalah resep dorayaki1",
+            "text2" : "ini adalah resep dorayaki1",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "resep dorayak2",
+            "text1" : "ini adalah resep dorayaki2",
+            "text2" : "ini adalah resep dorayaki2",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "resep dorayaki3",
+            "text1" : "ini adalah resep dorayaki3",
+            "text2" : "ini adalah resep dorayaki3",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "resep dorayaki4",
+            "text1" : "ini adalah resep dorayaki4",
+            "text2" : "ini adalah resep dorayaki4",
+            "textbutton" : "detail"
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "resep dorayaki5",
+            "text1" : "ini adalah resep dorayaki5",
+            "text2" : "ini adalah resep dorayaki5",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "resep dorayaki6",
+            "text1" : "ini adalah resep dorayaki6",
+            "text2" : "ini adalah resep dorayaki6",
+            "textbutton" : "detail"
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "resep dorayaki7",
+            "text1" : "ini adalah resep dorayaki7",
+            "text2" : "ini adalah resep dorayaki7",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki8",
+            "title" : "resep dorayaki8",
+            "text1" : "ini adalah resep dorayaki8",
+            "text2" : "ini adalah resep dorayaki8",
+            "textbutton" : "detail"
+        },{
+            "id" : "1",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki1",
+            "title" : "resep dorayaki1",
+            "text1" : "ini adalah resep dorayaki1",
+            "text2" : "ini adalah resep dorayaki1",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "2",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki2",
+            "title" : "resep dorayak2",
+            "text1" : "ini adalah resep dorayaki2",
+            "text2" : "ini adalah resep dorayaki2",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "3",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki3",
+            "title" : "resep dorayaki3",
+            "text1" : "ini adalah resep dorayaki3",
+            "text2" : "ini adalah resep dorayaki3",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "4",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki4",
+            "title" : "resep dorayaki4",
+            "text1" : "ini adalah resep dorayaki4",
+            "text2" : "ini adalah resep dorayaki4",
+            "textbutton" : "detail"
+        },{
+            "id" : "5",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki5",
+            "title" : "resep dorayaki5",
+            "text1" : "ini adalah resep dorayaki5",
+            "text2" : "ini adalah resep dorayaki5",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "6",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki6",
+            "title" : "resep dorayaki6",
+            "text1" : "ini adalah resep dorayaki6",
+            "text2" : "ini adalah resep dorayaki6",
+            "textbutton" : "detail"
+        },{
+            "id" : "7",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "alt" : "dorayaki7",
+            "title" : "resep dorayaki7",
+            "text1" : "ini adalah resep dorayaki7",
+            "text2" : "ini adalah resep dorayaki7",
+            "textbutton" : "detail"
+        },
+        {
+            "id" : "8",
+            "src" : "https://i.ibb.co/5GJ2KpC/dorayaki.png",
             "alt" : "dorayaki8",
             "title" : "resep dorayaki8",
             "text1" : "ini adalah resep dorayaki8",

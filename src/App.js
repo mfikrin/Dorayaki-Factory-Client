@@ -11,6 +11,7 @@ import Auth from './Auth';
 import Test from './components/Test'
 import Util from './util/Util'
 import { Fragment } from 'react';
+import Edit from './Pages/Edit';
 
 
 // Pindahin Navbar nya nanti perpage aja rendernya
@@ -28,7 +29,7 @@ function App() {
           <Route path='/recipe' component={Recipe} />
           <Route path='/report' component={Report} />
           <Route path='/detail/:id' component={Detail} />
-          <Route path='/util' component={Util} />
+          <Route path='/edit/:id' component={Edit} />
 
         </Fragment>
           

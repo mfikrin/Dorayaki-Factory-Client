@@ -1,0 +1,74 @@
+.Edits {
+    margin: 1em 12.5% 1em 12.5%;
+    /* max-width: 1140px; */
+    padding-top: 2em;
+}
+.Edits .prod-img{
+   max-width:300px;
+   max-height: 300px;
+   height:auto;
+   width: auto;
+   margin: 0px 40px 0 0;
+   float:left;
+   padding-right: 1em;
+}
+.Edits .text{
+    display: inline;
+    line-height: 200%;
+}
+
+.edit-stock {
+  background-color: #072f5f;
+  color: #fff;
+  border:none;
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.edit-button{
+    display: inline-flex;
+}
+.edit-inp {
+    position: relative;
+    height: 38px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    resize: vertical;
+  }
+
+  .text__edit{
+      font-weight: bold;
+      overflow: hidden;
+  }
+
+  .butmit__edit{
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color:rgb(31, 76, 145) ;
+    border: none;
+    text-decoration: none;
+    transition: background-color .5s;
+}
+
+.butmit__edit:hover{
+    background-color: rgb(51, 211, 150);
+}
+
+form{
+    padding:0;
+    margin:0;
+}
+
+#subBut{
+    width : 150px;
+}
+.inFlex{
+    display: inline-flex;
+}
+
