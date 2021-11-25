@@ -61,15 +61,15 @@ function Navbar() {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
                     Log out
                   </Link>
-              </li>
+              </li> */}
                 
             </ul>
 
-            {button && <Button onClick={Auth.logout()} linkto = "/login" customstyle="flip"> Log out</Button>}
+            {<Button onClick={()=>Auth.logout()} linkto = "/login" customstyle="flip"> Log out</Button>}
 
 
 

@@ -61,7 +61,7 @@ function Cards() {
                         <div className="box" key={i.id}>
                             <CardItem
                             id = {i.id}
-                            src = {i.src}
+                            src = {"https://i.ibb.co/5GJ2KpC/dorayaki.png"}
                             alt = {i.alt}
                             title = {i.title}
                             text1 = {i.text1}
