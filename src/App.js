@@ -12,6 +12,7 @@ import Test from './components/Test'
 import Util from './util/Util'
 import { Fragment } from 'react';
 import Edit from './Pages/Edit';
+import Signup from './Pages/Signup'
 
 
 // Pindahin Navbar nya nanti perpage aja rendernya
@@ -21,6 +22,7 @@ function App() {
       <Router>
       <Switch>
         <Route path='/login' exact component={Login} />
+        <Route path='/signup' exact component={Signup} />
         <Fragment>
         <Navbar /> 
         

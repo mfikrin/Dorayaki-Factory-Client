@@ -69,6 +69,9 @@ function Login() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
+        <span className='form-input-login'>
+            Don't have an account? Signup <a href='/signup'>here</a>
+        </span>
         {errorMessage && <div className="error"> {errorMessage} </div>}
       </Form>
     </div>
