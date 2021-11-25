@@ -1,13 +1,42 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Cards.css'
 import CardItem from './CardItem'
 import data from '../data/card.json'
 import Pagination from './Pagination'
-// import img from '../img/dorayaki.png'
+import Auth from "../Auth"
 
 function Cards() {
 
+    const [recipes, setRecipes] = useState([])
+
+    useEffect(() =>{
+        fetchRecipes();
+    },[])
+
+    const fetchRecipes = async () => {
+         
+        
+        try {
+            await fetch("http://localhost:5000/resep",{
+                method: "GET",
+                headers: { "Content-Type": "application/json",
+                           "authorization" :  Auth.getUser().accToken}
+            }).then(response => response.json()
+                .then(data => {
+                    setRecipes(data);
+                })
+            )
+            }  
+        catch (err){
+            console.log(err);
+        }
+    }
+
+    console.log(recipes)
     const json_data = data['cards']
+    // const json_data = recipes
+    
+    
     const {
         firstContentIndex,
         lastContentIndex,
