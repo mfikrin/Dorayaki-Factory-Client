@@ -129,11 +129,11 @@ function Table({columns, data}) {
       </div>
 
 
-        <div>
+        {/* <div>
             <pre>
             <code>{JSON.stringify(state, null, 2)}</code>
             </pre>
-        </div>
+        </div> */}
         
         </>
       );

@@ -34,7 +34,7 @@ function Login() {
               localStorage.setItem("user",JSON.stringify(data))
               // console.log(JSON.stringify(data));
               history.replace(from);
-              // console.log(Auth.getUser());
+              // console.log(Auth.getUser().accToken);
             }
           }));
           
