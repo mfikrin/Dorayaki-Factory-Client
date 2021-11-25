@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Button } from '../components/Button';
 import './Recipe.css'
+import Auth from '../Auth';
 
 function Recipe() {
 
@@ -32,6 +33,8 @@ function Recipe() {
         console.log(value);
     };
 
+
+
     const handleAddInput = () => {
         // setInputListRecipe([...InputListRecipe,{recipe : ""}]);
         const list = [...InputListRecipe];
@@ -45,12 +48,85 @@ function Recipe() {
         setInputListRecipe(list);
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async event => {
         event.preventDefault();
         alert('Submit');
         console.log("Submit")
         console.log(JSON.stringify(InputListRecipe));
         console.log(RecipeName.RecipeName);
+        // const list_to_db = [...inputToDb];
+        // const { name, value } = 
+        
+        let dora = '';
+        let bahan = [];
+        let qty = [];
+        // Mendapatkan ID Dorayaki
+        try{
+          await fetch("http://localhost:5000/dora/" + RecipeName.RecipeName , {
+            method: "GET",
+            headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken}
+          }).then(response => response.json().then(data => {
+            if(data.length != 0){
+              console.log(data);
+              console.log(data.dora_id);
+              dora = data.dora_id;
+            }
+          }));
+        }
+        catch(err){
+          console.error(err.message);
+        }
+
+        // Mendapatkan ID Bahan
+        console.log(InputListRecipe[0].recipe);
+        for (let i in InputListRecipe){
+            try{
+                await fetch("http://localhost:5000/bahan/" + InputListRecipe[i].recipe , {
+                  method: "GET",
+                  headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken}
+                }).then(response => response.json().then(data => {
+                  if(data.length != 0){
+                    console.log(data);
+                    console.log(data.bahan_id);
+                    // bahan = data.bahan_id;
+                    bahan.push(data.bahan_id);
+                    // qty = InputListRecipe[i].quantity;
+                    qty.push(parseInt(InputListRecipe[i].quantity));
+                  }
+                }));
+            }
+            catch(err){
+                console.error(err.message);
+            }
+        }
+
+        console.log("BODYYY");
+        console.log(dora);
+        console.log(bahan);
+        console.log(qty);
+        // Masukin ke DB
+        console.log("MASUKIN WOI KE DB");
+        for (let i in InputListRecipe){
+            const bahan_id = bahan[i];
+            const dora_id = dora;
+            const resep_qty = qty[i];
+            var body = {bahan_id, dora_id, resep_qty};
+            console.log(body);
+            try{
+                await fetch("http://localhost:5000/resep", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken},
+                  body: JSON.stringify(body)
+                }).then(response => response.json().then(data => {
+                  if(data.length != 0){
+                    console.log(data)
+                  }
+                }));
+            }
+            catch(err){
+                console.error(err.message);
+            }
+        }
 
     }
 
