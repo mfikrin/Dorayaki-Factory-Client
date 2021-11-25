@@ -39,7 +39,7 @@ function Cards() {
         }
     }
 
-    // console.log("HALLOO")
+    console.log("HALLOO")
     console.log(recipes);
     
     // Mendapatkan quantity
@@ -62,15 +62,18 @@ function Cards() {
     const getNameDora = async () => {
         for (let i in recipes){
             console.log(recipes[i].dora_id);
+            let tempName = '';
             try{
                 await fetch("http://localhost:5000/doraName/" + recipes[i].dora_id, {
                     method: "GET",
                     headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken}
                 }).then(response => response.json().then(data => {
                 if(data.length != 0){
-                    // console.log(data);
+                    // console.log("GET NAME DORA");
                     // console.log(data.dora_name);
-                    dorayaki_name.push(data.dora_name)
+                    // console.log(data.dora_name);
+                    tempName = data.dora_name;
+                    dorayaki_name.push(tempName);
 
                 }
                 }));
@@ -98,7 +101,7 @@ function Cards() {
                     if(data.length != 0){
                         // console.log(data);
                         // console.log(data.bahan_name);
-                        bahan_name_temp.push(data.bahan_name)
+                        bahan_name_temp.push(data.bahan_name);
                     }
                     }));
                 }
@@ -113,34 +116,39 @@ function Cards() {
     getNameDora();
     getNameBahan();
     getQuantity();
-    console.log("oooooooooooooooooooo")
+    console.log("dorayaki_name",dorayaki_name);
     console.log(bahan_name);
+    console.log("qrt", quantity);
 
-    // var json_arr = {};
-    //     json_arr["name1"] = "value1";
-    //     json_arr["name2"] = "value2";
-    //     json_arr["name3"] = "value3";
-
-    // var json_string = JSON.stringify(json_arr);
-    // [[],[]]
-    var json_arr = [];
-    var temp = [];
-    for (let i = 0; i < 4; i++){
-        json_arr["id"] = "i+1";
-        json_arr["nama"] = "dorayaki_name[i]";
-        json_arr["bahan"] = "bahan_name[i]";
-        json_arr["quantity"] = "quantity[i]";
-        
+    for (let i in dorayaki_name){
+        console.log("LOOP");
+        console.log(i);
     }
 
-    var person={"first_name":"Tony","last_name":"Hawk","age":31};
-    var personJSONString=JSON.stringify(person); 
+    // var json_string = JSON.stringify(json_arr);
+    
+    // console.log("JSONNNN STRING");
+    // console.log(json_string);
 
-    console.log(personJSONString);
 
-    var json_string = JSON.stringify(json_arr);
-    console.log("JSONNNN STRING");
-    console.log(json_string);
+    var json_data__ = [];
+    for (let i in recipes){
+        let id = i+1;
+        let dorayaki_name_temp = dorayaki_name[i];
+        let bahan_name_temp = bahan_name[i];
+        let quantity_temp = quantity[i];
+        json_data__.push(
+            {"id" : id, 
+            "dorayaki_name" : dorayaki_name_temp,
+            "bahan_name" : bahan_name_temp,
+            "quantity": quantity_temp
+            }
+        );
+    }
+    
+    console.log("qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
+
+    console.log(json_data__);
 
     // {
     //     id :
@@ -201,13 +209,9 @@ function Cards() {
                         <div className="box" key={i.id}>
                             <CardItem
                             id = {i.id}
+                            nama = {i.nama}
                             src = {"https://i.ibb.co/5GJ2KpC/dorayaki.png"}
-                            // alt = {i.alt}
-                            // title = {i.title}
-                            // text1 = {i.text1}
-                            // text2 = {i.text2}
-        
-                            // textbutton = {i.textbutton}
+                            
                             />
                         </div>
                     )

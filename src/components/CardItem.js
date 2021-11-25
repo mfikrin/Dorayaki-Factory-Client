@@ -14,10 +14,17 @@ function CardItem(props) {
 
                     <div className="body-base">
                         <a href={"/detail/" + props.id} className="dorayaki-name">
-                            <div className="body-title"> {props.title}</div>
+                            <div className="body-title"> {props.nama}</div>
                         </a>
-        
-                        <p className ="body-text"> {props.text1}</p>
+                        {/* {props.bahan.map((item,index) => {
+                                return (
+                                <p className ="body-text"> {item}</p>
+                                )
+
+                            }    
+                        )
+                        } */}
+                        <p className ="body-text">Deskripsi Resep</p>
                     {/* </div> */}
                     {/* <div className = "button__center"> */}
                     <div className="button__center">
