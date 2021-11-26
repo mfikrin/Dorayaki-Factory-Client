@@ -13,8 +13,16 @@
    padding-right: 1em;
 }
 .details .text{
-    display: inline;
+    display: inline-block;
     line-height: 200%;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.text__bahan{
+    display: inline;
+    line-height: 100%;
+    font-size: 20px;
 }
 
 /* .text p{

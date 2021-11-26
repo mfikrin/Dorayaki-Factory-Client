@@ -8,10 +8,10 @@ import Auth from "../Auth"
 function Cards() {
 
     const [recipes, setRecipes] = useState([]);
+    const [recipelength, setRecipelength] = useState(0)
     const [doraName, setDoraName] = useState([]);
     const [bahanName, setBahanName] = useState();
     const [quantity, setQuantity] = useState([]);
-
     // let dorayaki_name = [];
 
     useEffect(() =>{
@@ -23,24 +23,40 @@ function Cards() {
 
     const fetchRecipes = async () => {
         try {
-            await fetch("http://localhost:5000/resepAll",{
+            await fetch("http://localhost:5000/resepdora",{
                 method: "GET",
                 headers: { "Content-Type": "application/json",
                 "Authorization" :"Bearer "+Auth.getUser().accToken}
             }).then(response => response.json()
                 .then(data => {
                     if (data.length != 0){
-                        setRecipes(data.values);
+                        setRecipes(data);
+                        setRecipelength(data.length);
                         console.log("DATAA");
-                        console.log("WITHOUT VALUES",data);
+                        
+                        // var dataValue = [data.values];
+                        // let quantity_temp = [];
+                        // var name_temp = [];
+                        // var bahan_temp = [];
+                        // for (let i in dataValue){
+                        //     console.log("For I", i);
+                        //     console.log(dataValue[i].resep_qty);
+
+                        //     quantity_temp.push(dataValue[i].resep_qty);
+                        //     name_temp.push(dataValue[i].dora_name);
+                        //     bahan_temp.push(dataValue[i].bahan_name);
+                        // }
+                        // setQuantity(quantity_temp);
+                        // setDoraName(name_temp);
+                        // setBahanName(bahan_temp);
                     }
                 })
             )
         }  
         catch (err){
             console.log(err);
-
         }
+
     }
     
     // Mendapatkan quantity
@@ -136,24 +152,20 @@ function Cards() {
     console.log("QUANITITY", quantity);
 
     var json_data = [];
-    for (let i = 0 ; i < doraName.length ; i++){
-        let id = i+1;
-        let dorayaki_name_temp = doraName[i];
-        let bahan_name_temp = bahanName[i];
-        let quantity_temp = quantity[i];
+    for (let i = 0 ; i < recipelength ; i++){
+        let id =  recipes[i].dora_id;
+        let dorayaki_name_temp = recipes[i].dora_name;
+        // let bahan_name_temp = bahanName[i];
+        // let quantity_temp = quantity[i];
         json_data.push(
             {"id" : id, 
             "dorayaki_name" : dorayaki_name_temp,
             "src" :"https://i.ibb.co/5GJ2KpC/dorayaki.png",
-            "bahan_name" : bahan_name_temp,
-            "quantity": quantity_temp
+            // "bahan_name" : bahan_name_temp,
+            // "quantity": quantity_temp
             }
         );
     }
-
-    
-    // const json_data = data['cards']
-    // console.log(json_data)
 
     const {
         firstContentIndex,
