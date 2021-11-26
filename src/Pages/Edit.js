@@ -1,12 +1,39 @@
-import React , {useState} from 'react'
+import React , {useState,useEffect} from 'react'
 import data from '../data/Bahan.json'
 import {useParams} from 'react-router-dom';
 import "./Edit.css"
 import data_edit from '../data/Bahan.json'
 import { Button } from '../components/Button';
-function Edit() {
+import Auth from '../Auth';
 
+const getlast = yeah => yeah.substring(yeah.lastIndexOf('/') + 1);
 
+const Edit = () => {
+    const [bahanNamae,setBahanNamae] = useState('Ya');
+    const [bahanStocc,setBahanStocc] = useState(0);
+    useEffect(() =>{
+        getNamae();
+    },[]);
+    
+    const getNamae = async () => {
+        var bahan_id = getlast(window.location.pathname);
+        bahan_id = parseInt(bahan_id);
+          try{
+            await fetch("http://localhost:5000/bahanut/"+bahan_id, {
+              method: "GET",
+              headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken}
+            }).then(response => response.json().then(data => {
+              if(data.length != 0){
+                console.log(data)
+                setBahanNamae(data.bahan_name);
+                setBahanStocc(data.bahan_qty);
+              }
+            }));
+          }
+          catch(err){
+            console.error(err.message);
+          }
+        };
 
     function filterById(jsonObject, id) {
       return jsonObject.filter(function(jsonObject) {
@@ -42,12 +69,28 @@ function Edit() {
         setqty(quantity+1)
     }
 
-    const handleSubmitedit = event => {
+    const handleSubmitedit = async event => {
         event.preventDefault();
+        // console.log(window.location.pathname);
         alert('Submit');
-        console.log("Submit")
-        console.log(quantity)
-
+        console.log("Submit");
+        console.log(quantity);
+        var bahan_id = getlast(window.location.pathname);
+        bahan_id = parseInt(bahan_id);
+        console.log(bahan_id);
+        
+        var bahan_qty = quantity;
+        var body = {bahan_qty}
+        try{
+            await fetch("http://localhost:5000/bahan/"+bahan_id, {
+              method: "PUT",
+              headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken},
+              body: JSON.stringify(body)
+            });
+        }
+        catch(err){
+            console.error(err.message);
+        }
     }
     return (
           <>
@@ -60,7 +103,8 @@ function Edit() {
                     
                         <h3></h3>
                         <h3></h3>
-                        <p className="text__edit">Amount of stock : { data_Edit.quantity}</p>
+                        <p className="text__edit">{bahanNamae}</p>
+                        <p className="text__edit">Amount of stock : {bahanStocc}</p>
                         <p className="text__edit">Add Stock (Negative Value to Reduce) : </p>
                         <form onSubmit={handleSubmitedit} >
                             <div className="edit-button">
@@ -83,4 +127,4 @@ function Edit() {
       )
 }
 
-export default Edit
+export default Edit;

@@ -34,7 +34,7 @@ function App() {
           <Route path='/AddBahan' component={AddBahan} />
           <Route path='/report' exact><Report/></Route>
           <Route path='/detail/:id' component={Detail} />
-          <Route path='/edit/:id' component={Edit} />
+          <Route path='/Edit/:id' exact><Edit/></Route>
 
         </Fragment>
           
