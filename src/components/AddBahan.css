@@ -1,0 +1,73 @@
+.container__recipe{
+    position:relative;
+    min-height: 100vh;
+    display: block;
+    overflow: hidden;
+    padding-bottom:100px;
+}
+
+.recipe__title{
+  padding-top: 1%;
+  width:auto;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 32px;
+  font-weight:bolder;
+}
+
+.nameinput{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.textinput{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.rcpinput{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn__add{
+    color: white;
+    background-color: rgb(31, 76, 145);
+    border: none;
+    padding: 8px 16px;
+    margin: 12px 8px;
+    text-decoration: none;
+    transition: background-color .5s;
+  }
+  
+  .danger{
+    background-color:rgb(170, 48, 43) ;
+  }
+
+  .wider{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+
+.adderform{
+    padding-top: 1%;
+    width:400px ;
+    margin: 0 auto;
+}
+

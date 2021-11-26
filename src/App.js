@@ -13,6 +13,8 @@ import Util from './util/Util'
 import { Fragment } from 'react';
 import Edit from './Pages/Edit';
 import Signup from './Pages/Signup'
+import Bahan from './components/Bahan';
+import AddBahan from './components/AddBahan';
 
 
 // Pindahin Navbar nya nanti perpage aja rendernya
@@ -28,7 +30,8 @@ function App() {
         
        
           <Route path='/' exact component={Home} />
-          <Route path='/recipe' component={Recipe} />
+          <Route path='/AddRecipe' component={Recipe} />
+          <Route path='/AddBahan' component={AddBahan} />
           <Route path='/report' exact><Report/></Route>
           <Route path='/detail/:id' component={Detail} />
           <Route path='/edit/:id' component={Edit} />
