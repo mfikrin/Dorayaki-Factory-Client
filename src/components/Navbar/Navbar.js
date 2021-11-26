@@ -43,15 +43,21 @@ function Navbar() {
 
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link to ="/" className="nav-links" onClick={closeMobileMenu}>
                     Home
+                  </Link>
+                </li> */}
+
+                <li className="nav-item">
+                  <Link to ="/AddRecipe" className="nav-links" onClick={closeMobileMenu}>
+                    Add Recipe
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link to ="/recipe" className="nav-links" onClick={closeMobileMenu}>
-                    Add Recipe
+                  <Link to ="/AddBahan" className="nav-links" onClick={closeMobileMenu}>
+                    Add Bahan
                   </Link>
                 </li>
 
@@ -61,15 +67,15 @@ function Navbar() {
                   </Link>
                 </li>
 
-                {/* <li>
-                  <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
-                    Log out
-                  </Link>
-              </li> */}
+                  <li>
+                    <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
+                      Log out
+                    </Link>
+                </li>
                 
             </ul>
 
-            {<Button onClick={()=>Auth.logout()} linkto = "/login" customstyle="flip"> Log out</Button>}
+            {button && <Button onClick={()=>Auth.logout()} linkto = "/login" customstyle="flip"> Log out</Button>}
 
 
 
