@@ -12,7 +12,14 @@ Frontend Pabrik, dibuat menggunakan Node-ReactJS
 Aplikasi Web Frontend Pabrik, secara garis besar memiliki fitur bagi admin pabrik untuk melihat dan membuat resep produk dorayaki, melihat, membuat, dan mengubah kuantitas daftar bahan baku, dan melihat dan melakukan review terhadap request yang dilakukan toko. Aplikasi Web dibuat menggunakan NodeJS dan ReactJS, dengan `create-react-app`  
 
 ## Screenshot tampilan aplikasi (selengkapnya pada direktori screenshots)
-
+- Login ![Login](./screenshot/login.png)
+- Register ![Register](./screenshot/register.png)
+- Home ![Home](./screenshot/home.png)
+- Detail Resep ![Detail](./screenshot/detailresep.png)
+- Add Resep ![Add Resep](./screenshot/addresep.png)
+- Add Bahan ![Add bahan](./screenshot/addbahan.png)
+- Edit Bahan ![Edit Bahan](./screenshot/editbahan.png)
+- Daftar Request ![Daftar Request](./screenshot/request.png)
 ## Requirements
 1. [nodejs](https://nodejs.org/en/download/)
 2. [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
