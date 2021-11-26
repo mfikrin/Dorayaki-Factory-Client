@@ -53,11 +53,10 @@ function Recipe() {
         alert('Submit');
         console.log("Submit")
         console.log(JSON.stringify(InputListRecipe));
-        console.log(RecipeName.RecipeName);
         // const list_to_db = [...inputToDb];
         // const { name, value } = 
-        
-        let dora = '';
+        let namae = RecipeName.RecipeName;
+        let dora = -1;
         let bahan = [];
         let qty = [];
         // Mendapatkan ID Dorayaki
@@ -68,13 +67,36 @@ function Recipe() {
           }).then(response => response.json().then(data => {
             if(data.length != 0){
               console.log(data);
+              console.log(RecipeName.RecipeName);
               console.log(data.dora_id);
               dora = data.dora_id;
+              console.log(dora);
             }
           }));
+          
         }
         catch(err){
           console.error(err.message);
+        }
+
+        try{
+            if(dora == -1){
+                const body = {namae};
+                console.log("nanio");
+                console.log(body);
+                await fetch("http://localhost:5000/dora", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json","Authorization" :"Bearer "+Auth.getUser().accToken},
+                  body : JSON.stringify(body)
+                }).then(response => response.json().then(data => {
+                    if(data.length != 0){
+                      dora = data.dora_id;
+                    }
+                  }));
+              }
+        }
+        catch(err){
+            console.log(err.message);
         }
 
         // Mendapatkan ID Bahan
@@ -170,11 +192,11 @@ function Recipe() {
                     
                 </div>
 
-            <pre>
+            {/* <pre>
                 {JSON.stringify(InputListRecipe,null,2)}
                 <br/>
                 {JSON.stringify(RecipeName,null,2)}
-            </pre>
+            </pre> */}
         </form>
     
     </div>
