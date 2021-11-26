@@ -12,33 +12,33 @@ function Bahan() {
     const [bahan, setBahan] = useState([])
     const [Datalength, setDatalength] = useState(0)
     
-    useEffect(() =>{
-        fetchBahan();
+    // useEffect(() =>{
+    //     fetchBahan();
         
-    },[])
+    // },[])
 
-    const fetchBahan = async () => {
-        try {
-            await fetch("http://localhost:5000/bahan",{
-                method: "GET",
-                headers: { "Content-Type": "application/json",
-                "Authorization" :"Bearer "+Auth.getUser().accToken}
-            }).then(response => response.json()
-                .then(data => {
-                    if (data.length != 0){
-                        setBahan(data.values);
-                        setDatalength(data.length)
-                        console.log("DATAA");
-                        console.log(data.values);
-                    }
-                })
+    // const fetchBahan = async () => {
+    //     try {
+    //         await fetch("http://localhost:5000/bahan",{
+    //             method: "GET",
+    //             headers: { "Content-Type": "application/json",
+    //             "Authorization" :"Bearer "+Auth.getUser().accToken}
+    //         }).then(response => response.json()
+    //             .then(data => {
+    //                 if (data.length != 0){
+    //                     setBahan(data.values);
+    //                     setDatalength(data.length)
+    //                     console.log("DATAA");
+    //                     console.log(data.values);
+    //                 }
+    //             })
             
-            )
-        }  
-        catch (err){
-            console.log(err);
-        }
-    }
+    //         )
+    //     }  
+    //     catch (err){
+    //         console.log(err);
+    //     }
+    // }
 
 
     /*
