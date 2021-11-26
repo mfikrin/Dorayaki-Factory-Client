@@ -39,9 +39,24 @@ Aplikasi Web Frontend Pabrik, secara garis besar memiliki fitur bagi admin pabri
 ## Pembagian Tugas
 ### Halaman Frontend
 - Login : 13519018
-- Request : 
-### API Routing - Fetch
+- Register : 13519091
+- Request : 13519069
+- Add Resep : 13519069
+- Add Bahan : 13519069
+- Home (Resep & Bahan) : 13519069
+- Detail Resep : 13519069, 13519091
+- Detail Bahan : 13519069, 13519091
+
+### Fetch Data dari/ke REST endpoint
 - Login : 13519018
+- Register : 13519091
 - Melihat Daftar Request : 13519018
 - Mengubah Status Request : 13519018
-- Menambah varian resep dorayaki : 13519018
+- Menambah varian resep dorayaki : 13519018,13519069,13519091
+- Mengubah stok bahan : 13519018
+- Add Bahan : 13519069, 13519091
+- Daftar Resep : 13519069, 13519091
+- Daftar Bahan  : 13519069, 13519091
+- Detail Resep : 13519069, 13519091
+- Detail Bahan : 13519069, 13519091
+
