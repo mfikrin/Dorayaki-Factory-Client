@@ -14,7 +14,7 @@ function BahanItem(props) {
 
                     <div className="body-base">
                         <a href={"/Edit/" + props.id} className="dorayaki-name">
-                            <div className="body-title"> {props.title}</div>
+                            <div className="body-title"> {props.bahanName}</div>
                         </a>
         
                         <p className ="body-text"> Quantity : {props.quantity}</p>

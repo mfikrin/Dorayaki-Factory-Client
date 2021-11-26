@@ -11,35 +11,55 @@ function Bahan() {
 
     const [bahan, setBahan] = useState([])
     const [Datalength, setDatalength] = useState(0)
-    
-    // useEffect(() =>{
-    //     fetchBahan();
-        
-    // },[])
 
-    // const fetchBahan = async () => {
-    //     try {
-    //         await fetch("http://localhost:5000/bahan",{
-    //             method: "GET",
-    //             headers: { "Content-Type": "application/json",
-    //             "Authorization" :"Bearer "+Auth.getUser().accToken}
-    //         }).then(response => response.json()
-    //             .then(data => {
-    //                 if (data.length != 0){
-    //                     setBahan(data.values);
-    //                     setDatalength(data.length)
-    //                     console.log("DATAA");
-    //                     console.log(data.values);
-    //                 }
-    //             })
-            
-    //         )
-    //     }  
-    //     catch (err){
-    //         console.log(err);
-    //     }
-    // }
 
+
+    useEffect(() =>{
+        fetchBahan1();
+
+    },[])
+
+    const fetchBahan1 = async () => {
+        try {
+            await fetch("http://localhost:5000/bahan",{
+                method: "GET",
+                headers: { "Content-Type": "application/json",
+                "Authorization" :"Bearer "+Auth.getUser().accToken}
+            }).then(response => response.json()
+                .then(data => {
+                    if (data.length != 0){
+                        setBahan(data);
+                        setDatalength(data.length);
+                        console.log("DATAA");
+                        console.log(data);
+                    }
+                })
+            )
+        }  
+        catch (err){
+            console.log(err);
+        }
+    }
+    console.log("TEST",bahan.length);
+    console.log("PANJANG", Datalength)
+
+    for (let i=0; i<Datalength; i++) {
+        console.log("FOR LOOP",bahan[i]);
+    }
+
+    var json_data_bahan = [];
+    for (let i = 0 ; i < Datalength ; i++){
+        let id = bahan[i].bahan_id;
+        let bahan_name = bahan[i].bahan_name;
+        let quantity_temp = bahan[i].bahan_qty;
+        json_data_bahan.push(
+            {"id" : id, 
+            "bahan_name" : bahan_name,
+            "src" :"https://i.ibb.co/5GJ2KpC/dorayaki.png",
+            "quantity": quantity_temp
+            }
+        );
+    }
 
     /*
     
@@ -54,7 +74,7 @@ function Bahan() {
     */
     
 
-    const json_data = data['Bahan']
+    // const json_data = data['Bahan']
     const {
         firstContentIndex,
         lastContentIndex,
@@ -74,15 +94,14 @@ function Bahan() {
             
 
             <div className="container">
-                {json_data.slice(firstContentIndex,lastContentIndex).map(i => {
+                {json_data_bahan.slice(firstContentIndex,lastContentIndex).map(i => {
                     return(
                         <div className="box" key={i.id}>
                             <BahanItem
                             id = {i.id}
                             src = {i.src}
-                            alt = {i.alt}
-                            title = {i.bahan_name}
-                            quantity = {i.bahan_qty}
+                            bahanName = {i.bahan_name}
+                            quantity = {i.quantity}
                             />
                         </div>
                     )
