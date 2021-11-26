@@ -41,8 +41,8 @@ function AddBahan() {
         
         for (let i in InputBahan){
             const bahan_name = InputBahan[i].Bahan;
-            const quantity_bahan = InputBahan[i].quantity; 
-            var body = {bahan_name,quantity_bahan}
+            const bahan_qty = InputBahan[i].quantity; 
+            var body = {bahan_name,bahan_qty}
             try{
                 await fetch("http://localhost:5000/bahan/", {
                   method: "POST",
@@ -107,11 +107,11 @@ function AddBahan() {
                     
                 </div>
 
-            <pre>
+            {/* <pre>
                 {JSON.stringify(InputBahan,null,2)}
                 <br/>
                 
-            </pre>
+            </pre> */}
         </form>
     
     </div>
